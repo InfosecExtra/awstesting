@@ -25,5 +25,14 @@ jobs:
           role-to-assume: ${{ secrets.READ_ROLE }}
           role-session-name: OIDCSession
 
-      - run: aws sts get-caller-identity
+      - name: Get Caller Identity
+        run: aws sts get-caller-identity
+        shell: bash
+
+      - name: Get Secret Value
+        run: aws secretsmanager get-secret-value --secret-id flag_sts_lab_2
+        shell: bash
+
+      - name: Final Comment
+        run: echo "THEN I GOT THE FLAG!"
         shell: bash
