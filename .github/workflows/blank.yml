@@ -32,3 +32,7 @@ jobs:
       - name: Get Secret Value
         run: aws secretsmanager get-secret-value --secret-id flag_sts_lab_2
         shell: bash
+
+      - name: Final Comment
+        run: echo "THEN I GOT THE FLAG!"
+        shell: bash
