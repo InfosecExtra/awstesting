@@ -1,4 +1,5 @@
 Learning AWS - Federation Abuse from Cloud Hacktricks : https://cloud.hacktricks.xyz/pentesting-cloud/aws-security/aws-basic-information/aws-federation-abuse#oidc-github-actions-abuse
+
 While exploring AWS, I delved into federation abuse techniques, specifically leveraging GitHub Actions for privilege escalation. Here's a breakdown of what I learned.
 
 I started by enumerating the lab’s IAM policy using the following command:
