@@ -6,6 +6,7 @@ I started by enumerating the lab’s IAM policy using the following command:
 aws iam get-policy-version --policy-arn <policy-arn> --version-id <version-id> --profile profilename
 
 This command retrieves the details of a specific IAM policy version. From there, I uncovered the following policy structure:
+
 <img width="724" alt="image" src="https://github.com/user-attachments/assets/f72267cd-9940-4982-b602-f9fa5d09068c">
 
 This policy specifies a condition that targets repositories with names matching a certain pattern (repo:*hacktricks-training*). This allows GitHub Actions to assume the role.
